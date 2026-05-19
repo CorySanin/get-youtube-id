@@ -2,6 +2,28 @@
   "name": "get-youtube-id-ng",
   "version": "1.0.1",
   "description": "next-generation simple YouTube URL parser",
+  "keywords": [
+    "youtube",
+    "url",
+    "parser"
+  ],
+  "homepage": "https://github.com/CorySanin/get-youtube-id",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CorySanin/get-youtube-id.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Cory Sanin",
+    "email": "corysanin@outlook.com",
+    "url": "https://sanin.dev"
+  },
+  "contributors": [
+    {
+      "name": "Jeremy Morrell",
+      "email": "morrell.jeremy@gmail.com"
+    }
+  ],
   "type": "module",
   "exports": {
     ".": {
@@ -17,6 +39,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "coverage": "vitest run --coverage",
     "test": "vitest"
   },
   "devDependencies": {
@@ -26,27 +49,5 @@
     "typescript": "6.0.3",
     "vitest": "4.1.6"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/CorySanin/get-youtube-id.git"
-  },
-  "homepage": "https://github.com/CorySanin/get-youtube-id",
-  "keywords": [
-    "youtube",
-    "url",
-    "parser"
-  ],
-  "author": {
-    "name": "Cory Sanin",
-    "email": "corysanin@outlook.com",
-    "url": "https://sanin.dev"
-  },
-  "contributors": [
-    {
-      "name": "Jeremy Morrell",
-      "email": "morrell.jeremy@gmail.com"
-    }
-  ],
-  "license": "MIT",
   "readmeFilename": "README.md"
 }

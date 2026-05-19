@@ -81,6 +81,7 @@ describe('ID parser', () => {
         url
         ${'https://whoisworm.com/video/376'}
         ${'https://guzmer.org/videos/V01rC6PWT-A'}
+        ${''}
     `('rejects non-YouTube url $url', (params: { url: string }) => {
         expect(getYouTubeID(params.url, { fuzzy: true })).toBe(null);
     });
