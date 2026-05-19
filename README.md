@@ -1,5 +1,10 @@
 # get-youtube-id-ng
 
+[![NPM License](https://img.shields.io/npm/l/get-youtube-id-ng)](https://github.com/CorySanin/get-youtube-id?tab=License-1-ov-file#readme)
+[![NPM Version](https://img.shields.io/npm/v/get-youtube-id-ng)](https://www.npmjs.com/package/get-youtube-id-ng)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/CorySanin/get-youtube-id/unit-tests.yaml)](https://github.com/CorySanin/get-youtube-id/actions/workflows/unit-tests.yaml)
+[![GitHub last commit](https://img.shields.io/github/last-commit/CorySanin/get-youtube-id)](https://github.com/CorySanin/get-youtube-id/commits/master/)
+
 Parse a youtube url returning the video ID. Fork of [get-youtube-id](https://github.com/jmorrell/get-youtube-id).
 
 ## Why fork
