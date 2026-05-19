@@ -34,6 +34,7 @@ describe('ID parser', () => {
         ${'LRARHtMzZQE'} | ${'https://www.youtube.in/watch?v=LRARHtMzZQE'}
         ${'i2r-hGsuHT4'} | ${'https://m.youtube.com/shorts/i2r-hGsuHT4?ra=m'}
         ${'_ARyA3TYYpA'} | ${'https://youtu.be/_ARyA3TYYpA?si=ZZq7bl8IBREAKy5z'}
+        ${'9bZkp7q19f0'} | ${'http://www.youtube.com/watch?v=9bZkp7q19f0'}
     `('can parse $id from $url', (params: { url: string, id: string }) => {
         expect(getYouTubeID(params.url, { fuzzy: false })).toBe(params.id);
     });

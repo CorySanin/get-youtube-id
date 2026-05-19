@@ -18,14 +18,10 @@ npm install get-youtube-id-ng
 ## Example
 
 ``` js
-var getYouTubeID = require('get-youtube-id-ng');
-
-var id = getYouTubeID("http://www.youtube.com/watch?v=9bZkp7q19f0");
-console.log(id); // "9bZkp7q19f0"
-
-
-// Or, if you're using ES6 syntax:
 import { getYouTubeID } from 'get-youtube-id-ng';
+
+const id = getYouTubeID("http://www.youtube.com/watch?v=9bZkp7q19f0");
+console.log(id); // "9bZkp7q19f0"
 ```
 
 ## Fuzzy matching
@@ -35,9 +31,9 @@ an 11-character id. If you want it to be more strict you can turn this off with 
 argument.
 
 ```js
-var getYouTubeID = require('get-youtube-id-ng');
+import { getYouTubeID } from 'get-youtube-id-ng';
 
-var id = getYouTubeID("youtube abcdefghijk", {fuzzy: false});
+const id = getYouTubeID("youtube abcdefghijk", {fuzzy: false});
 console.log(id); // null
 ```
 
