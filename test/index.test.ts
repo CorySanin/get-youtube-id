@@ -71,6 +71,7 @@ describe('ID parser', () => {
         ${'i2r-hGsuHT4'} | ${'https://m.youtube.com/shorts/i2r-hGsuHT4?ra=m'}
         ${'_ARyA3TYYpA'} | ${'https://youtu.be/_ARyA3TYYpA?si=ZZq7bl8IBREAKy5z'}
         ${'QdK8U-VIH_o'} | ${'http://www.youtube.com/user/IngridMichaelsonVEVO#p/a/u/1/QdK8U-VIH_o'}
+        ${'abcdefghijk'} | ${'youtube abcdefghijk abcdefghijk&vid/abcdefghijk'}
     `('can parse $id from $url using fuzzy parser', (params: { url: string, id: string }) => {
         expect(getYouTubeID(params.url)).toBe(params.id);
     });
@@ -87,7 +88,7 @@ describe('ID parser', () => {
         fuzzy | url
         ${false} | ${'http://www.youtube.com/user/IngridMichaelsonVEVO#p/a/u/1/QdK8U-VIH_o'}
         ${true}  | ${'https://www.youtube.com/channel/UCioYoEZgUdrQ8-OMViQ9b1g'}
-        ${true}  | ${''}
+        ${true}  | ${'youtube abcdefghijk lmnopqrstuv abcdefghijk'}
     `('rejects non-video YouTube url $url with fuzzy = $fuzzy', (params: { url: string, fuzzy: boolean }) => {
         expect(getYouTubeID(params.url, { fuzzy: params.fuzzy })).toBe(null);
     })
